@@ -87,7 +87,7 @@ Both values are meant to be public. Never put the `service_role` or secret key i
    git remote add origin https://github.com/<your-github-username>/<repository>.git
    git push -u origin main
    ```
-3. In the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**. The included workflow publishes `site/` on every push. The first deploy takes a minute or two (watch the **Actions** tab).
+3. In the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**. The workflow run started by your push fails at `configure-pages` with "Not Found", because Pages was not on yet. Run it again: **Actions → Deploy to GitHub Pages → Run workflow**. From then on, every push that changes `site/` publishes it; each deploy takes a minute or two.
 4. Open the site and sign in with your GitHub account. You should see an **Instructor** link in the top bar.
 
 ## What to tell students
