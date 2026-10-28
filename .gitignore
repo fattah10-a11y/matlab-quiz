@@ -1,0 +1,7 @@
+node_modules/
+.qa/
+
+# The question bank and the seed generated from it contain the answer key.
+# Keep them out of a public repository (see README, "Keeping answers private").
+bank/
+supabase/questions_seed.sql

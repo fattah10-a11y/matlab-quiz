@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfcfb">
+  <meta name="description" content="Timed 30-minute MATLAB practice quizzes for CS01104, with progress tracking.">
+  <title>MATLAB Quiz</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="vendor/supabase.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="MATLAB Quiz home">
+      <img src="icon.svg" alt="" width="30" height="30">
+      <span class="brand-name">MATLAB Quiz</span>
+      <span class="brand-course" id="brand-course"></span>
+    </a>
+    <nav class="mainnav" id="mainnav" aria-label="Main"></nav>
+    <div class="topbar-end">
+      <button type="button" class="icon-button" id="theme-toggle">☾</button>
+      <div id="account"></div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="loading" role="status">Loading…</div>
+  </main>
+  <footer class="footer" id="footer"></footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">This quiz needs JavaScript enabled in your browser.</p></noscript>
+</body>
+</html>
